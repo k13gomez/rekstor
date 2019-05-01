@@ -47,8 +47,5 @@
   (testing "validate person"
     (let [rec (->Person "Smith" "John" "M" "Green", (LocalDate/parse "1999-01-01"))]
       (is (valid? ::spec/person rec))
-      (is (true? (spec/validate-person rec)))
       (is (not (valid? ::spec/person nil)))
-      (is (false? (spec/validate-person nil)))
-      (is (not (valid? ::spec/person {})))
-      (is (false? (spec/validate-person {}))))))
+      (is (not (valid? ::spec/person {}))))))

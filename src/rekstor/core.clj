@@ -1,6 +1,7 @@
 (ns rekstor.core
   (:require [rekstor.codec :as codec]
             [rekstor.spec :as spec]
+            [clojure.spec.alpha :as s]
             [clojure.java.io :as io]
             [clojure.pprint :refer [print-table]])
   (:gen-class)
@@ -15,8 +16,9 @@
   (let [reader (io/reader file)
         lines (line-seq reader)
         decoder (partial codec/decode-person format)
+        validator (partial s/valid? ::spec/person)
         records (map decoder lines)]
-    (filter spec/validate-person records)))
+    (filter validator records)))
 
 (defn- format-person-record
   "formats a person record for printing"
