@@ -53,7 +53,8 @@
   "main entry point for the record store cli app"
   [& {:as input}]
   (when (empty? input)
-    (println "Usage: java -jar rekstor.jar [<file> \"<delimited-pattern>\"]"))
+    (println "CLI Usage: java -cp rekstor.jar rekstor.core [<file> \"<delimited-pattern>\"]")
+    (println "API Usage: PORT=<port> java -cp rekstor.jar rekstor.handler"))
   (doseq [[file format] input]
     (let [records (read-person-records file format)]
       (print-person-records file records))))
