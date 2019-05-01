@@ -22,3 +22,6 @@
                    ::gender
                    ::favorite-color
                    ::date-of-birth]))
+
+(def validate-person
+  (partial s/valid? ::person))
