@@ -1,0 +1,23 @@
+space-delimited.txt records sorted by :gender and :last-name ascending:
+
+| :last-name | :first-name | :gender | :favorite-color | :birth-date |
+|------------+-------------+---------+-----------------+-------------|
+|    Seymour |        Jane |       F |            Blue |    2/1/2000 |
+|      Smith |        Jane |       F |            Blue |    2/1/2000 |
+|      Gomez |        Jose |       M |           Green |   4/12/1987 |
+
+space-delimited.txt records sorted by :birth-date ascending:
+
+| :last-name | :first-name | :gender | :favorite-color | :birth-date |
+|------------+-------------+---------+-----------------+-------------|
+|      Gomez |        Jose |       M |           Green |   4/12/1987 |
+|      Smith |        Jane |       F |            Blue |    2/1/2000 |
+|    Seymour |        Jane |       F |            Blue |    2/1/2000 |
+
+space-delimited.txt records sorted by :last-name descending:
+
+| :last-name | :first-name | :gender | :favorite-color | :birth-date |
+|------------+-------------+---------+-----------------+-------------|
+|      Smith |        Jane |       F |            Blue |    2/1/2000 |
+|    Seymour |        Jane |       F |            Blue |    2/1/2000 |
+|      Gomez |        Jose |       M |           Green |   4/12/1987 |

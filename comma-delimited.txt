@@ -1,0 +1,5 @@
+LastName, FirstName, Gender, FavoriteColor, DateOfBirth
+Gomez, Jose, M, Green, 1987-04-12
+Smith, Jane, F, Blue, 2000-02-01
+Seymour, Jane, F, Blue, 2000-02-01
+

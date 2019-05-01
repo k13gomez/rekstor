@@ -11,4 +11,4 @@
       (is (= (:first-name person) "Jane"))
       (is (= (:gender person) "F"))
       (is (= (:favorite-color person) "Blue"))
-      (is (= (:date-of-birth person) dob)))))
+      (is (= (:birth-date person) dob)))))

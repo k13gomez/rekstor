@@ -13,7 +13,7 @@
 
 (s/def ::favorite-color ::non-empty-string)
 
-(s/def ::date-of-birth
+(s/def ::birth-date
   (partial instance? LocalDate))
 
 (s/def ::person
@@ -21,7 +21,7 @@
                    ::last-name
                    ::gender
                    ::favorite-color
-                   ::date-of-birth]))
+                   ::birth-date]))
 
 (def validate-person
   (partial s/valid? ::person))

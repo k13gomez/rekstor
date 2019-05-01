@@ -21,6 +21,6 @@
   (testing "validate decode person record"
     (let [expected (->Person "Smith" "John" "M" "Blue" (LocalDate/parse "2018-01-01"))]
       (is (= (decode-person "," "Smith, John, M, Blue, 2018-01-01") expected))
-      (is (= (decode-person "|" "Smith | John | M | Blue | 2018-01-01") expected))
+      (is (= (decode-person "\\|" "Smith | John | M | Blue | 2018-01-01") expected))
       (is (= (decode-person " " "Smith John M Blue 2018-01-01") expected))
       (is (not= (decode-person "," "Smith, John, M, Blue") expected)))))
