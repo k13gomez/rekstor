@@ -1,32 +1,23 @@
 # rekstor
 
-FIXME: description
-
-## Installation
-
-Download from http://example.com/FIXME.
+person record store application with CLI and API
 
 ## Usage
 
-FIXME: explanation
+Print Help:
+```bash
+$ java -jar rekstor.jar
+```
 
-    $ java -jar rekstor-0.1.0-standalone.jar [args]
+CLI Usage: 
+```bash
+$ java -cp rekstor.jar rekstor.core [<file> \"<delimited-pattern>\"]
+```
 
-## Options
-
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
+API Usage:
+```bash
+$ PORT=<port> java -cp rekstor.jar rekstor.handler
+```
 
 ## License
 
