@@ -3,7 +3,6 @@
   (:require [rekstor.codec :as codec]
             [rekstor.spec :as spec]
             [clojure.spec.alpha :as s]
-            [clojure.pprint :refer [pprint]]
             [compojure.api.sweet :refer :all]
             [ring.util.http-response :refer :all]
             [ring.adapter.jetty :refer [run-jetty]]))
