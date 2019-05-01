@@ -44,7 +44,7 @@
             (do
               (swap! state conj record)
               (ok record))
-            (let [error (str (s/explain-str ::spec/person record))]
+            (let [error (s/explain-str ::spec/person record)]
               (-> (bad-request error)
                 (header "Content-Length" (count error))
                 (header "Content-Type" "text/plain")))))))))
