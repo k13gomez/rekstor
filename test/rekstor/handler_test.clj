@@ -9,7 +9,7 @@
   (assoc ring-map
     :body (slurp body)))
 
-(deftest your-json-handler-test
+(deftest test-handler-end-to-end
   (let [state (atom [])
         handler (api-routes state)
         req1-line "Gomez, Jose, M, Green, 1987-04-12"
